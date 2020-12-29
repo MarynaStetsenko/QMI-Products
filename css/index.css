@@ -538,7 +538,8 @@ form {
     color: var(--menu-hover-color);
 }
 
-.footer-info {
+.footer-socials {
+    display: flex;
     margin-bottom: 15px 32px 15px 32px;
     font-size: 12px;
     margin: 30px;
