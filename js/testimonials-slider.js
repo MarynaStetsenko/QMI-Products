@@ -1,6 +1,6 @@
 $(function() {
 
- $('.client_slider').slick({
+ $('.testimonials-slider').slick({
     infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,

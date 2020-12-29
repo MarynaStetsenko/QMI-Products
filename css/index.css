@@ -10,26 +10,24 @@
 }
 
 :root {
-    --menu-color: #000000; 
+    --menu-color: rgb(0,0,0); 
     --menu-hover-color: rgb(31,92,138); 
     --h1-color: rgb(251,247,245); 
     --contact-form-color: #faf5f2; 
-    --background-color: #6685BA; 
-    --about-us-h-color: #79a207; 
+    --background-color:  rgb(138, 132, 132);  
+    --about-h-color: rgb(31,92,138); 
     --serv-border-color: #79a207; 
     --subheader-color: #0d3c00;
     --header-sev-color: #0d3c00;
     --learning-text-color: #0d3c00;
     --footer-back-color: #0d3c00;
-    --main-text-color: #707070;
-    --our-srv-back-color: #FAF0E6;
-    --service-text-color: #191c18;
-    --mediateca-main-color: #191c18;
+    --main-text-color:  rgba(0, 0, 0, 0.664);
+    --our-srv-back-color: rgb(235,235,235);
+    --products-text-color: #191c18;
     --contacts-text-color:#191c18;
     --serv-back-color: #ffffff;
-    --order-button-color: #ffffff;
-    --fotter-font-color: #ffffff;
-    --destroy-btn-color: #951B35;
+    --learn-more-button-color: #ffffff;
+    --footer-font-color: rgb(0,0,0);
     scroll-behavior: smooth;
 }
 
@@ -39,7 +37,8 @@ body {
 }
 
 nav {
-    padding: 30px 15px 30px 15px;
+    padding: 20px 15px 20px 15px;
+    color: var(--background-color);
 }
 
 
@@ -62,11 +61,14 @@ header nav input:checked ~ .menu {
 
 .menu a {
     font-family: "Inter", sans-serif;
+    font-size: 2em;
+    font-weight: 600
     color: var(--menu-color);
     text-decoration: none;
     border: 1px solid transparent;
     display: block;
     padding: 3px;
+    margin-top: 20px;
 }
 
 .menu a:hover {
@@ -77,8 +79,9 @@ a {
     text-decoration: none;
 }
 
-.selected {
-    font-weight: bold;
+.main-logo img {
+  
+  width: 200px;
 }
 
 @media(min-width: 530px) {
@@ -107,7 +110,7 @@ a {
     background-image: url(../img/hands-on-ice.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 500px;
+    min-height: 700px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -133,7 +136,7 @@ a {
     margin-bottom: 34px;
 }
 
-.btn-danger, btn-outline-danger {
+.btn-danger {
     border-radius: 25px;
     height: 50px;
     width: 158px;
@@ -148,11 +151,13 @@ a {
     margin-left: 30px;
 }
 
+/*
 h1 {
     font-size: 74px;
     color: var(--h1-color);
     padding-left: 30px;
 }
+*/
 
 
 #banner p {
@@ -160,22 +165,23 @@ h1 {
 }
 
 
-#about-us {
+#about {
     font-family: "Inter", sans-serif;
     padding: 130px 10px 65px 20px;
     border: 1px solid transparent;
 }
 
-.about-us-header {
+.about-header {
     font-size: 36px;
-    color: var(--about-us-h-color);
+    color: var(--about-h-color);
     display: flex;
     justify-content: flex-start;
+
 }
 
 
-.about-us-text {
-    font-size: 17px;
+.about-text {
+    font-size: 20px;
     font-weight: 400;
     color: var(--main-text-color);
     padding: 0 0 30px 0;
@@ -183,45 +189,49 @@ h1 {
     justify-content: flex-start;
 }
 
-.about-us-img {
-    width: 100%;
+.about-img {
+    width: 80%;
     margin: auto;
     display: block;
 }
 
 @media(min-width: 850px) {
-    #about-us {
+    #about {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr 2fr;
         justify-content: center;
     }
 
-    .about-us-header {
+    .about-header {
         grid-column: 1;
         grid-row: 1;
     }
 
 
-    .about-us-text {
+    .about-text {
         grid-column: 1;
         grid-row: 3;
     }
 
-    .about-us-img {
+    .about-img {
         grid-column: 2;
         grid-row: 1 / span 3;
         justify-self: start;
     }
 }
 
-#our-services {
+#products {
     background-color: var(--our-srv-back-color);
     padding: 0 24px 0 24px;
     padding-bottom: 50px;
 }
 
-.our-services-header {
+.products img {
+    width: 350px;
+    padding: 20px;
+}
+.products-header {
     font-family: "Inter", serif;
     font-size: 42px;
     color: var(--subheader-color);
@@ -229,41 +239,37 @@ h1 {
     justify-content: center;
 }
 
-.our-services-text {
+.products-text {
     font-family: "Inter", sans-serif;
     font-size: 18px;
-    color: var(--service-text-color);
+    color: var(--products-text-color);
     display: flex;
     justify-content: center;
     padding-top: 30px;
 }
 
-.services {
+.products {
     background-color: var(--serv-back-color);
     font-family: "Inter", sans-serif;
-    border-style: solid hidden hidden hidden;
-    border-color: var(--serv-border-color) var(--serv-back-color) var(--serv-back-color) var(--serv-back-color);
-    border-radius: 4px;
     margin-top: 50px;
-    padding: 0 15px 0 15px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    box-shadow: 3px 3px 3px 3px var(--main-text-color);
+   
 }
 
-
-.header-services {
-    font-size: 36px;
-    color: var(--header-sev-color);
+.header-products {
+    font-size: 30px;
+    color: rgb(0,0,0);
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
-.text-services {
+.text-products {
     font-size: 17px;
     text-align: center;
     color: var(--main-text-color);
@@ -272,11 +278,11 @@ h1 {
     justify-content: center;
 }
 
-.order-button {
+.learn-more-button {
     font-size: 11px;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--order-button-color);
+    color: var(--learn-more-button-color);
     background-color: #6B8E23;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -291,13 +297,13 @@ h1 {
 }
 
 
-.order-button a {
+.learn-more-button a {
     text-decoration: none;
     color: #ffffff;
 }
 
 @media (min-width: 780px) {
-    .service-list {
+    .products-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
@@ -305,24 +311,24 @@ h1 {
 }
 
 @media (min-width: 900px) {
-    .service-list {
+    .products-list {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-.reviews{
+.testimonials{
     width: 1170px;
     height: 485px;
     top: 567px;
     margin: auto;
 }
 
-.client_slider{
+.testimonials-slider{
     width: 1170px;
     top: 65px;
 }
 
-.reviews_text{
+.testimonials-text{
     font-family: "Inter", sans-serif;
     color:#A5C752;
     font-size: 37px;
@@ -334,7 +340,7 @@ h1 {
     top: 11px;
 }
 
-.reviews_img{
+.testimonials-img{
     width: 120px;
     height: 120px;
     border-radius: 100px;
@@ -344,7 +350,7 @@ h1 {
 }
 
 
-.name_client{
+.costumer-name{
     font-family: "Inter", sans-serif;
     color:#74675a;
     font-size: 25px;
@@ -356,7 +362,7 @@ h1 {
     top: 35px;
 }
 
-.clients_text{
+.costumer-text{
     line-height: 1.6;
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -369,16 +375,16 @@ h1 {
 }
 
 /*
-@media (min-width: 770px) {
-    .reviews {
+@media (min-width: 780px) {
+    .testimonials {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
     }
 }
 
-@media (min-width: 990px) {
-    .reviews {
+@media (min-width: 900px) {
+    .testimonials {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -388,6 +394,22 @@ h1 {
 #contacts {
     margin: 50px 15px 0 15px;
     text-align: left;
+    background-image: url(../img/sea.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    /*display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-blend-mode: multiply;
+    background-color: rgb(155, 163, 168);*/ 
 }
 
 .contacts-main {
@@ -451,7 +473,7 @@ form {
 }
 
 .form-btn {
-    background-color: #6B8E23;
+    background-color: rgb(194, 48, 48);
     font-family: "Inter", bold;
     font-size: 13px;
     text-align: center;
@@ -471,13 +493,13 @@ form {
 }
 
 #footer-menu {
-    background-color: var(--footer-back-color);
+    /*background-color: var(--footer-back-color);*/
     padding: 65px 24px 30px 24px;
 }
 
 #footer-menu a {
     font-family: "Inter", sans-serif;
-    color: var(--fotter-font-color);
+    color: var(--footer-font-color);
     text-decoration: none;
     border: 1px solid transparent;
     padding: 3px;
@@ -492,10 +514,10 @@ form {
 .footer-socials {
     display: flex;
     margin-bottom: 15px 32px 15px 32px;
-    font-size: 12px;
-    margin: 30px;
     color: var(--contact-form-color);
+
 }
+
 
 @media (min-width: 600px) {
     #footer-menu {
