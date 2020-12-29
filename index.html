@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SULzhyk</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="main-logo">
+                   <img src="img/qmi-logo.png" alt="QMI Products logo">
+                </div>
+                <label class="burger-menu-icon" for="burger-checkbox">☰</label>
+                <input type="checkbox" id="burger-checkbox">
+                <div class="menu">
+                    <a href="#about-us" class="selected">About us</a>
+                    <a href="#our-services">Products</a>
+                    <a href="#mediateca">Testimonials</a>
+                    <a href="#contacts">Contacts</a>
+                </div>
+            </nav>
+            <div id="banner">
+                <p id="qmi">qmi products</p>
+                <p id="as-ice">slippery as "wet ice on wet ice"</p>
+                <div>
+                    <button type="button" class="btn btn-danger button">Contact us</button>
+                    <button type="button" class="btn btn-danger button"> Learn more</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="about-us">
+                <h2 class="about-us-header">About Us</h2>
+                <p class="about-us-text">QMI Products is a part of QMI Scandinavia, that has been on the market of Norway for more than 20 years. QMI is the World leader in Marine Maintenance by using a proprietary PTFE technology for Friction Surfaces. QMI protects metal-to-metal friction surfaces with PTFE treatment, like “wet ice on wet ice,” a substitute wear surface that reduces friction and heat, while improving performance and energy efficiency, prolonging life and trouble-free operation.</p>
+                <img src="img/about-us.jpg" alt="About Us" class="about-us-img">
+            </section>
+            <section id="our-services">
+                <h2 class="our-services-header">Products</h2>
+                <p class="our-services-text">best for</p>
+                <div class="service-list">
+                    <article class="services">
+                        <h3 class="header-services">Marine</h3>
+                        <!-- <img src="img/marine.jpg" alt="White boat sailing"> -->
+                        <p class="text-services">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <a href="#">
+                            <button class="order-button">Learn more</button>
+                        </a>
+                    </article>
+                    <article class="services">
+                        <h3 class="header-services">Cars</h3>
+                        <!-- <img src="img/car.jpg" alt="Red convertible car driving on a highway"> -->
+                        <p class="text-services">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <a href="#">
+                            <button class="order-button">Learn more</button>
+                        </a>
+                    </article>
+                    <article class="services">
+                        <h3 class="header-services">Vehicles</h3>
+                        <!-- <img src="img/bike.jpg" alt="Harely Davidson"> -->
+                        <p class="text-services">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <a href="#">
+                            <button class="order-button">Learn more</button>
+                        </a>
+                    </article>
+                </div>
+            </section>
+         
+        <article class="reviews">
+        <p class="reviews_text">Testimonials</p>
+        <div class="client_slider">
+            <div class="slide">
+                <img src="img/barber-ship-management.png" alt="BSM logo" class="reviews_img">
+                <p class="name_client">Barber Ship Management</p>
+                <p class="clients_text">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."</p>
+            </div>
+            <div class="slide">
+                <img src="img/sea-pride.jpg" alt="Sea Pride boat" class="reviews_img">
+                <p class="name_client">Sea Pride</p>
+                <p class="clients_text">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."</p>
+            </div>
+            <div class="slide">
+                <img src="img/gc-parana.jpg" alt="GC Parana boat" class="reviews_img">
+                <p class="name_client">GC PARANA (WESNAV)</p>
+                <p class="clients_text">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."</p>
+            </div>
+        </div>
+    </article>
+</main>
+<footer>
+    <section id="contacts">
+        <div class="contacts-main">
+            <h2 class="contacts-header">Контакти</h2>
+            <p class="contacts-text">Заходь вгості!</p>
+            <p class="contacts-data">Львів, вул.Дорошенка, 15</p>
+            <p class="contacts-text">Контакти</p>
+            <p class="contacts-data">+1 (234) 567 89 00</p>
+            <p class="contacts-data">@SULzhyk</p>
+            <img class="location-img" src="img/location.jpg" alt="Адреса">
+        </div>
+        <form method="POST" action="https://formspree.io/f/mknpqwak">
+            <p class="contacts-text">Напиши нам! </p>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Ім'я</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Ми не будемо надсилати спам. Чесне літературне!</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Контактний телефон</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Можеш написати все, що думаєш!</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-btn">Надіслати</button>
+        </form>
+    </section>
+    <div id="footer-menu">
+        <a href="#about-us">Про нас</a>
+        <a href="#our-services">Послуги</a>
+        <a href="#mediateca">Медіатека</a>
+        <a href="#test">Тест</a>
+        <a href="#contacts">Контакти</a>
+        <p class="footer-info">Developed by Marina Stetsenko</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src='js/index.js'></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/client_slider.js"></script>
+</body></html>
