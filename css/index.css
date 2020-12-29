@@ -62,7 +62,7 @@ header nav input:checked ~ .menu {
 .menu a {
     font-family: "Inter", sans-serif;
     font-size: 2em;
-    font-weight: 600
+    font-weight: 600;
     color: var(--menu-color);
     text-decoration: none;
     border: 1px solid transparent;
