@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600;800 &display=swap");
 :root {
   font-family: "Inter", sans-serif;
-  --main-color: rgb(235, 235, 235);
+  --main-color: rgb(235,235,235);
 }
 
  h1, h2, p, a, div, article, nav, section {
@@ -11,8 +11,8 @@
 
 :root {
     --menu-color: #000000; 
-    --menu-hover-color: #79a207; 
-    --h1-color: #faf5f2; 
+    --menu-hover-color: rgb(31,92,138); 
+    --h1-color: rgb(251,247,245); 
     --contact-form-color: #faf5f2; 
     --background-color: #6685BA; 
     --about-us-h-color: #79a207; 
@@ -42,16 +42,7 @@ nav {
     padding: 30px 15px 30px 15px;
 }
 
-/*
-.socials {
-    padding: -20px -10px -10px 0;
-}
 
-.socials img {
-    height: 30px;
-    width: 30px;
-}
-*/
 
 #burger-checkbox {
     display: none;
@@ -113,22 +104,48 @@ a {
 #banner {
     font-family: "Inter", serif;
     color: var(--h1-color);
-    background-image: url(../img/main-background.jpg);
+    background-image: url(../img/hands-on-ice.jpg);
     background-size: cover;
     background-position: center;
     min-height: 500px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    opacity: 0.8;
+    opacity: 0.9;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: -1;
-    background-blend-mode: multiply ;
+    background-blend-mode: multiply;
     background-color: var(--background-color);
+}
+
+#qmi {
+    font-size: 74px;
+    text-transform: uppercase;
+}
+
+#as-ice {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+
+.btn-danger, btn-outline-danger {
+    border-radius: 25px;
+    height: 50px;
+    width: 158px;
+    margin-left: 30px;
+}
+
+.btn-outline-danger {
+    border-radius: 25px;
+    border-color: rgb(255,255,255);
+    height: 50px;
+    width: 158px;
+    margin-left: 30px;
 }
 
 h1 {
@@ -137,10 +154,11 @@ h1 {
     padding-left: 30px;
 }
 
+
 #banner p {
-    font-size: 42px;
     padding-left: 30px;
 }
+
 
 #about-us {
     font-family: "Inter", sans-serif;
@@ -295,14 +313,12 @@ h1 {
 .reviews{
     width: 1170px;
     height: 485px;
-   /* position: relative; */
     top: 567px;
     margin: auto;
 }
 
 .client_slider{
     width: 1170px;
- /* position: relative; */
     top: 65px;
 }
 
@@ -353,64 +369,8 @@ h1 {
 }
 
 /*
-#mediateca {
-    padding: 30px 24px 60px 24px;
-}
-
-#mediateca h2 {
-    font-family: "Inter", serif;
-    font-size: 42px;
-    color: var( --mediateca-main-color);
-    display: flex;
-    justify-content: center;
-}
-
-.mediateca-about {
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    text-align: center;
-    color: var( --mediateca-main-color);
-    padding: 10px 0 10px 0 ;
-    display: flex;
-    justify-content: center;
-}
-
-.learning-text {
-    font-family: "Inter", sans-serif;
-    font-size: 24px;
-    color: var(--learning-text-color);
-    display: flex;
-    justify-content: center;
-}
-
-.mediateca-subheader {
-    font-family: "Inter", sans-serif;
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--subheader-color);
-    display: flex;
-    justify-content: flex-start;
-}
-
-.m-text {
-    font-family: "Inter", sans-serif;
-    font-size: 17px;
-    color: var(--main-text-color);
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 40px;
-}
-
-.img-mediateca {
-    width: 100%;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    margin: auto;
-    display: block;
-}
-
 @media (min-width: 770px) {
-    .lection-section {
+    .reviews {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
@@ -418,18 +378,11 @@ h1 {
 }
 
 @media (min-width: 990px) {
-    .lection-section {
+    .reviews {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .blog-section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
     }
 }
 */
-
 
 
 #contacts {
@@ -467,7 +420,7 @@ h1 {
     font-size: 17px;
     color: var(--main-text-color);
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .location-img {
@@ -483,11 +436,9 @@ form {
     font-size: 14px;
     color: var(--main-text-color);
     border: 1px solid transparent;
-    border-radius: 10px;
-    padding: 60px;
+    padding: 50px;
     margin-bottom: 20px;
     text-align: left;
-    box-shadow: 3px 3px 3px 3px var(--main-text-color);
 }
 
 @media (min-width: 780px) {
