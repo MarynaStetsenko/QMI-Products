@@ -44,17 +44,3 @@ prev.addEventListener("click", () => {
 next.addEventListener("click", () => {
   plusSlides(1);
 });
-
-
-
-
-
-/* $(function() {
-
- $('.testimonials-slider').slick({
-    infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  })
-
-}) */
