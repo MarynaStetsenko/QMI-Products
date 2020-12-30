@@ -50,15 +50,6 @@ q {
 	margin: 0 auto 0 auto;
 }
 
-.rectangle {
-	width: 40%;
-	height: 100vh;
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
-}
-
 
 /* slideshow container */
 

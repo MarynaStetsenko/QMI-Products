@@ -226,7 +226,8 @@ a {
 .products-subtext {
 	font-size: 30px;
 	text-align: center;
-	padding-top: 30px;
+    padding-top: 30px;
+    color: var(--main-text-color);
 }
 
 #products-hr {
@@ -258,7 +259,7 @@ a {
 
 .header-products {
 	font-size: 30px;
-	color: rgb(0, 0, 0);
+	color: var(--main-text-color);
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -396,7 +397,7 @@ form {
 }
 
 #contacts-help {
-	color: rgb(0, 0, 0);
+	color: var(--main-text-color);
 	font-size: 22px;
 	font-weight: 800;
 	text-align: center;
