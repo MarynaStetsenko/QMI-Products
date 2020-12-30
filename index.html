@@ -21,11 +21,12 @@
                 <a href="#about">About us</a>
                 <a href="#products">Products</a>
                 <a href="#testimonials">Testimonials</a>
-                <a href="#contacts">Contacts</a>
+                <a href="#contacts">Contacts</a> 
+                <div class="main-logo">
+                  <img src="img/qmi-logo.png" alt="QMI Products logo">
+                </div>
             </div>
-            <div class="main-logo">
-                <img src="img/qmi-logo.png" alt="QMI Products logo">
-            </div>
+           
         </nav>
         <div id="banner">
             <p id="qmi">qmi products</p>
@@ -49,7 +50,8 @@
         </section>
         <section id="products">
             <h2 class="products-header">Products</h2>
-            <p class="products-text">best for:</p>
+            <p class="products-subtext">best for:</p>
+            <hr id="products-hr">
             <div class="products-list">
                 <article class="products">
                     <img src="img/marine.jpg" alt="White boat sailing">
@@ -81,7 +83,7 @@
                 </article>
             </div>
         </section>
-
+        <!--
         <section class="testimonials">
             <p class="testimonials-text" id="testimonials">Testimonials</p>
             <div class="testimonials-slider">
@@ -111,58 +113,56 @@
                 </div>
             </div>
         </section>
+        -->
     </main>
     <footer>
         <section id="contacts">
             <div class="contacts-main">
                 <h2 class="contacts-header">Contact Us</h2>
-                <p class="contacts-text">For all enquires, please fill out the form or contact us directly.</p>
-                <table>
-                    <tr>
-                        <td rowspan="2" class="contacts-text">Address</td>
-                        <td class="contacts-data">Stasjovseien 20<br> Bjorkelangen, Norway</td>
-                    </tr>
-
-                    <tr>
-                        <td class="contacts-text">Hours</td>
-                        <td class="contacts-data">Monday - Saturday 9 AM - 7 PM</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2" class="contacts-text">Contacts</td>
-                        <td>
-                            <a class="contacts-data"
-                                href="mailto:sigmund.kverne@qmiproducts.com">sigmund.kverne@qmiproducts.com</a>
-                        </td>
-                    </tr>
-                </table>
+                    <hr id="hr">
+                    <p class="contacts-text">For all enquires, please fill out the form or contact us directly.</p>
+                        <div class="contacts-subtext">
+                            <h3>Address</h3>
+                            <p>Stasjovseien 20<br> Bjorkelangen, Norway</p>
+                        </div>
+                        <br>
+                        <div class="contacts-subtext">
+                            <h3>Hours</h3>
+                            <p>Monday - Saturday: 9 AM - 7 PM</p>
+                        </div>
+                        <br>
+                        <div class="contacts-subtext">
+                            <h3>Contacts</h3>
+                            <p><a class="contacts-data" href="mailto:sigmund.kverne@qmiproducts.com">sigmund.kverne@qmiproducts.com</a></p>
+                        </div>           
             </div>
             <form method="POST" action="#">
                 <p class="contacts-text">How can we help?</p>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
+                    <label for="textarea-name" class="form-label"></label>
+                    <textarea class="form-control" id="textarea-name" rows="1"
                         placeholder="Enter your full name"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
+                    <label for="textarea-phone" class="form-label"></label>
+                    <textarea class="form-control" id="textarea-phone" rows="1"
                         placeholder="Enter your phone number"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <label for="input-email" class="form-label"></label>
+                    <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp"
                         placeholder="Enter your email">
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    <label for="textarea-msg" class="form-label"></label>
+                    <textarea class="form-control" id="textarea-msg" rows="3"
                         placeholder="Type your message"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary form-btn">Submit</button>
             </form>
-
         </section>
+
         <div id="footer-menu">
             <a href="#about">About us</a>
             <a href="#products">Products</a>
